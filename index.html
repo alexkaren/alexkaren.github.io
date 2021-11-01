@@ -32,8 +32,10 @@ color: red;
 	background-size: contain;
 	text-align: center;
 	color: red;
-	background-color:blue;
+		position:absolute;
 
+/*	background-color:blue;
+*/
 }
 
 #Shark2{
@@ -41,9 +43,16 @@ color: red;
 	height:150px;
 	background-image: url(https://res.cloudinary.com/dk-find-out/image/upload/q_70,c_pad,w_1200,h_630,f_auto/Grey_reef_shark_dreamstime_xl_5569552_qmsbfl.jpg);
 	background-size: contain;
+	position:absolute;
+	top:300px;
+	left: 700px;
 
 }
 
+.text{
+	position:relative;
+	top:50%;
+}
 
 </style>
 
@@ -53,7 +62,7 @@ color: red;
 	<div id="myname"> Alex Karen</div>
 </center>
 
-<a href="journal.html"><div id="Shark1">Journal</div></a>
+<a href="journal.html"><div id="Shark1"><div class="text">Journal</div></div></a>
 
 <a href="projects.html"><div id="Shark2"></div></a>
 

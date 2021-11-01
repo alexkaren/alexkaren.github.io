@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<style type="text/css">
+		
+
+		.Zachy{
+			position: relative;
+			display: inline-grid;
+			height: 200px;
+			width: 100px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url(Zachy.png);
+			background-color: red;
+		}
+
+
+</style>
+
+
+
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+		function makeZachy () {
+			var Zachy = document.createElement("div")
+			document.body.appendchild(Zachy)
+				Zachy.classList.add("Zachy");
+
+
+		}
+
+makeZachy();
+
+setInterval(makeZachy, 1000)
+
+</script>
+
+
+</body>
+</html>
