@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	body{
+		background-color: pink;
+		font-size: 200px;
+	}
+</style>	
+</head>
+<body>
+
+	
+
+
+
+I AM THANKFUL FOR ALEX KIM
+
+<script type="text/javascript">
+	
+
+var array = ["kim2","kim3","kim4"]
+
+
+	function makeKim (){
+		var variable = Math.floor(Math.random()*2)
+
+		var cookie = document.createElement("div")
+		document.body.appendChild(cookie);
+		cookie.style.height = "1200px";
+			cookie.style.width = "1700px";
+			cookie.style.backgroundImage = "url(kim1.png)";
+			cookie.addEventListener("click", function (){
+				cookie.style.backgroundImage = "url("+ variable + ")";
+				cookie.style.backgroundSize = "cover"})
+		}
+
+		makeKim ()
+		
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+		.fatgunna{
+			height: 200px;
+			width: 200px;
+			background-image: url(fatgunna.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			display: inline-block;
+		}
+	</style>
+
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	
+	document.addEventListener("click", function(){
+		var square = document.createElement("div")
+		document.body.appendChild(square)
+
+		square.classList.add("square")
+	}
+
+	)
+
+	function printGunna () {
+
+		var square = document.createElement("div")
+		document.body.appendChild(square)
+
+		square.classList.add("fatgunna")
+
+		square.addEventListener("click", function(){
+
+			square.style.opacity = "0"
+		}
+
+			)
+
+	}
+
+</script>
+
+</body>
+</html>
