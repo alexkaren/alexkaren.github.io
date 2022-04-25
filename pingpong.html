@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+
+.pong{
+	background-image: url(ball.png);
+	width: 50px;
+	height: 50px;
+	background-size: contain;
+	position: absolute;
+}	
+
+</style>
+
+</head>
+<body>
+<div id="input"></div>
+<div class="pong"></div>
+
+<script type="text/javascript">
+	
+var pew = document.getElementById('sound');
+var input = document.getElementById('input');
+var x = 0;
+
+function createPing(){
+	var ping = document.createElement('div');
+	document.body.appendChild(ping);
+	ping.classList.add("pong");
+
+
+function changePosition(){
+	ping.style.left = 1000 * Math.random() + "px";
+	ping.style.top = 1000 * Math.random() + "px";
+}
+
+ping.addEventListener("click", function(){
+	console.log("hi");
+	x = x + 1;
+	input.value = x;
+	ping.classList.remove("pong");
+
+})
+
+setInterval(changePosition, 2000)
+};
+
+setInterval(createPing, 1000);
+
+</script>
+
+</body>
+</html>

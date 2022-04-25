@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	
+	#title{
+		font-size: 100px;
+	margin-left: 24%
+	}
+
+	body{
+		background-color: pink;
+	}
+
+	#Meatball{
+		font-size: 100px;
+	margin-left: 35%;
+	margin-top: 30%;
+	}
+
+	#easy{
+		font-size: 100px;
+	margin-left: 65%;
+	margin-top: 45%;
+	}
+
+
+</style>
+
+<div id="title">Thank You Maria</div>
+
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+
+
+var Meatball = document.createElement("div")
+document.body.appendChild(Meatball);
+Meatball.style.backgroundImage = "url(meatballs.png)"
+Meatball.style.backgroundSize = "cover";
+Meatball.style.height = "215px";
+Meatball.style.width = "215px";
+Meatball.style.display = "inline-block";
+		
+
+Meatball.addEventListener("click", function (){
+
+Meatball.style.backgroundImage = "url(food.png)"
+
+})
+
+var easy = document.createElement("div")
+document.body.appendChild(easy);
+easy.style.backgroundImage = "url(meatballs.png)"
+easy.style.backgroundSize = "cover";
+easy.style.height = "215px";
+easy.style.width = "215px";
+easy.style.display = "inline-block";
+		
+
+easy.addEventListener("click", function (){
+
+easy.style.backgroundImage = "url(easier.png)"
+
+})
+
+
+</script>
+
+</body>
+</html>
